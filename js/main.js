@@ -16,11 +16,15 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//  TYPED JS
-const typed = new Typed(".multiple-text", {
-  strings: [ "Frontend Developer","UI/UX Designer", "Writer"],
-  typeSpeed: 70,
-  backSpeed: 70,
-  backDelay: 1000,
-  loop: true,
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach((card) => {
+    card.addEventListener("click", function () {
+      const link = this.getAttribute("data-link");
+      if (link) {
+        window.open(link, "_blank"); // Membuka link di tab baru
+      }
+    });
+  });
 });

@@ -325,6 +325,7 @@ span {
   overflow: hidden;
   transition: transform 0.3s;
   position: relative;
+  cursor: pointer;
 }
 
 .card-image {
