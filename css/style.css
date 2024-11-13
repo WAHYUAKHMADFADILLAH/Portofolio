@@ -497,6 +497,9 @@ footer a {
   .profile-img {
     margin-top: 20%;
   }
+  .about {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
